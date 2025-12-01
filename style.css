@@ -1,0 +1,236 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+    
+    background: linear-gradient(135deg,
+        #6bbf59,   
+        #ff5733,  
+        #c7a36b,   
+        #b0b7c6,   
+        #3da4e0    
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 14s ease infinite;
+
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+
+    background: rgba(0,0,0,0.30);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffe7d6;
+    text-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+
+
+
+
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 120px auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+
+
+
+.explicacion-card {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(0,0,0,0.25);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    text-align: left;
+}
+
+blockquote {
+    font-style: italic;
+    color: #ffe0c0;
+    margin-left: 20px;
+    border-left: 4px solid #ffffff60;
+    padding-left: 12px;
+}
+
+
+
+
+
+.elements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 35px;
+    width: 100%;
+    margin: auto;
+}
+
+.element-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 22px;
+    border-radius: 16px;
+
+    border: 1px solid rgba(255,255,255,0.35);
+    color: white;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+
+.element-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+
+.element-card.madera { border-left: 6px solid #6bbf59; }
+.element-card.fuego  { border-left: 6px solid #ff5733; }
+.element-card.tierra { border-left: 6px solid #c7a36b; }
+.element-card.metal  { border-left: 6px solid #b0b7c6; }
+.element-card.agua   { border-left: 6px solid #3da4e0; }
+
+
+
+
+
+.card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    width: 380px;
+    margin: 0 auto;
+
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+
+input[type="number"] {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.5);
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+
+    background: #007bff;
+    color: white;
+
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+
+
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.Madera { background: #6bbf59; }
+.Fuego  { background: #ff5733; }
+.Tierra { background: #c7a36b; }
+.Metal  { background: #b0b7c6; color: black; }
+.Agua   { background: #3da4e0; }
+
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+
+    background: rgba(0,0,0,0.30);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+@keyframes gradientMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
