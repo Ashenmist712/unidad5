@@ -42,7 +42,7 @@ if ($entrega == 'SI') {
                 </h4>
 
                 <div class="text-center mt-4">
-                    <a href="index.php" class="btn btn-light fw-bold w-100">Regresar</a>
+                    <a href="libreria.php" class="btn btn-light fw-bold w-100">Regresar</a>
                 </div>
 
             </div>
