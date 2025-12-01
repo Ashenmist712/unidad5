@@ -1,0 +1,36 @@
+
+body {
+    background: linear-gradient(to bottom right, #001f3f, #66b2ff); /* azul marino → azul claro */
+    min-height: 100vh;
+    padding-top: 40px;
+    color: white;
+}
+
+
+.card-custom {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-custom label,
+.card-custom h1,
+.card-custom ul li {
+    color: #f1f1f1;
+}
+
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover,
+.btn-check:checked + .btn-outline-light {
+    background-color: #ffffff;
+    color: #001f3f;
+}
